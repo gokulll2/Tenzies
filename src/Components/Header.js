@@ -1,7 +1,6 @@
 import React from "react";
-export default function Header(props)
+export default function Header()
 {
-    console.log(props.x)
 
     return(
         <main className="header">

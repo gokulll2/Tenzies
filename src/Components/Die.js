@@ -1,13 +1,16 @@
 import React from "react";
 export default function Die(props)
 {
-    return(
-        <div>
-            <div>
-                <img src="./Components/assets/1.png">
-                    
-                </img>
-            </div>
-        </div>
-    )
+    const styles={
+        backgroundcolor: props.isheld ? "#59E391" : "white"
+     }
+     return(
+         <div 
+         className="die-face"
+         style={styles}
+         onClick={props.holdDice}>
+             <div className={`overlay overlay${props.number}`}></div>
+         </div>
+ 
+     )
 }
