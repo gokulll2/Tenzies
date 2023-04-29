@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function footer()
+export default function Footer(props)
 {
     return(
-        <footer className="footer">
-            <button>
-                Roll
+        
+            <button  className="footer_button" onClick={props.rollDice}>
+                {props.value}
             </button>
 
-        </footer>
+        
     )
 }
