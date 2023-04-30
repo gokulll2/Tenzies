@@ -69,6 +69,7 @@ export default function Game(props)
           return <Die key={die.id} number={die.number} isheld={die.isheld} holdDice={()=>holdDice(die.id)}/>
         }
     )
+    
    
    return(
 <main>
